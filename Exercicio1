@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Exercicio1 {
+    public static void main(String[] args) {
+
+        //Uma loja está realizando uma promoção de 15% de desconto em todos os produtos.
+        //Crie um programa que:
+        // Leia o valor original de um produto.
+        // Calcule o valor do desconto.
+        // Calcule o preço final a ser pago.
+        // Exiba todos os resultados.
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Qual o valor do produto? ");
+        double produto = leia.nextDouble();
+        double desconto = produto * 0.15;
+        double valorTotal = produto - desconto;
+        System.out.println("o valor do produto é? " + produto);
+        System.out.println("o valor do desconto é? " + desconto);
+        System.out.println("o valor total é? " + valorTotal);
+        leia.close();
+
+
+    }
+}
