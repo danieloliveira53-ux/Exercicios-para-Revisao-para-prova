@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Exercicio2 {
+    public static void main(String[] args) {
+        //Crie um programa usando condicional que leia a
+        // quantidade de horas que um veículo ficou
+        //estacionado e informe o valor a ser pago:
+        //Até 2 horas → R$ 10,00
+        // Mais de 2 horas e até 5 horas → R$ 20,00
+        // Acima de 5 horas → R$ 35,00
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Quantas horas o veiculo ficou estacionado? ");
+        double horas = leia.nextDouble();
+        if (horas <=2){
+            System.out.println("O valor a ser pago é R$ 10,00 reais");
+        }
+        else if (horas <=5){
+            System.out.println("O valor a ser pago é R$ 20,00");
+        }else{
+            System.out.println("O valor a ser pago é R$ 35,00");
+        }
+    }
+}
